@@ -95,6 +95,13 @@ main{
 }
 .info{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.info h1{
+    color: #d12411;
 }
 .info h1,h4{
     text-transform: uppercase;
@@ -132,8 +139,7 @@ main{
     }
     .info{
         width: 100%;
-        text-align: center;
-        padding: 30px 20px;
+        padding-top: 70px;
     }
     .program-Name{
         width: 100%;
