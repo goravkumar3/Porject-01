@@ -74,6 +74,7 @@ main{
     gap: 20px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .info h1{
     font-size: 6em;
@@ -106,7 +107,26 @@ main{
     font-size: 1.7em;
     cursor: pointer;
 }
-
+.py{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 7em;
+    gap: 20px;
+}
+.pylogo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+.pylogo img{
+    height: 80px;
+}
+.pylogo span{
+    font-size: 2em;
+}
 @media only screen and (max-width:700px) {
     nav{
         flex-direction: column;
