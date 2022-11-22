@@ -1,170 +1,218 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
-    box-shadow: 0px 0px 4px 2px rgb(231, 192, 192);
-    position: fixed;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 1;
-    background-color: #fff;
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 4px 2px rgb(231, 192, 192);
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  background-color: #fff;
 }
-nav a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
-.menu{
-    display: flex;
-    align-items: center;
+.menu {
+  display: flex;
+  align-items: center;
 }
-.menu span{
-    padding: 0px 10px;
+.menu span {
+  padding: 0px 10px;
 }
-.menu span:nth-child(6){
-    background-color: rgb(44, 44, 171);
-    color: #fff;
-    border-radius: 20px;
-    padding: 10px 25px;
-    cursor: pointer;
+.menu span:nth-child(6) {
+  background-color: rgb(44, 44, 171);
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 25px;
+  cursor: pointer;
 }
-#sub-menu{
-    display: none;
-    position: absolute;
-    z-index: 1;
-    width: 6rem;
-    padding: 20px;
-    background-color: #000;
+#sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 6rem;
+  padding: 20px;
+  background-color: #000;
 }
-#sub-menu a{
-color:#fff;
+#sub-menu a {
+  color: #fff;
 }
-#sub-menu li{
-    list-style: none;
+#sub-menu li {
+  list-style: none;
 }
-.humburgur{
-    display: none;
-    cursor: pointer;
+.humburgur {
+  display: none;
+  cursor: pointer;
 }
-.humburgur img{
-    height: 40px;
+.humburgur img {
+  height: 40px;
 }
-main{
-    width: 100%;
-    height: 40em;
-    background: url(./../img/971.jpg) no-repeat center center/cover;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+main {
+  height: 40em;
+  background: url(./../img/971.jpg) no-repeat center center/cover;
+  color: #fff;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 0px 20px;
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+main h1 {
+  font-size: 6em;
+  text-transform: uppercase;
 }
-.info h1{
-    font-size: 6em;
+main h3 {
+  font-size: 1.4em;
+}
+main h4,
+p {
+  font-size: 2em;
+}
+main button {
+  all: inherit;
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.Program {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 0px 2px 2px rgb(243, 182, 182);
+  padding: 10px;
+  gap: 20px;
+}
+.Program span {
+  font-size: 1.7em;
+  cursor: pointer;
+}
+.py {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 70px 20px;
+  background-color: #6674cc;
+  color: #fff;
+}
+.pylogo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+.pylogo img {
+  height: 80px;
+}
+.pylogo span {
+  font-size: 2em;
+}
+.py div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.py button {
+  all: inherit;
+  background-color: #fc466b;
+  color: #fff;
+  width: fit-content;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 2em;
+}
+.quote {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f8f8fd;
+}
+.quote q {
+  font-size: 2em;
+}
+.quote p {
+  margin-top: 10px;
+  color: rgb(147, 128, 128);
+}
+.social{
+  text-align: center;
+  padding: 70px 20px;
+  background-color: #e2e6df;
+  flex-wrap: wrap;
+}
+.social h1{
     text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(138, 137, 232);
 }
-.info h3{
-    font-size: 1.4em;
-}
-.info h4,p{
-    font-size: 2em;
-}
-.info button{
-    all:inherit;
-    background: linear-gradient(to right,#3f5efb,#fc466b);
-    color: #fff;
-    width:fit-content;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-.Program{
-    background-color: #fff;
+.social_links{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    box-shadow: 0px 0px 2px 2px rgb(243, 182, 182);
-    padding: 10px;
-}
-.Program span{
-    font-size: 1.7em;
-    cursor: pointer;
-}
-.py{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    margin-top: 7em;
-    gap: 20px;
-}
-.pylogo{
-    display: flex;
     align-items: center;
+    margin-top: 100px;
+}
+.social_links img{
+    height: 4em;
+}
+@media only screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
     width: 100%;
-    justify-content: center;
-    gap: 20px;
-}
-.pylogo img{
-    height: 80px;
-}
-.pylogo span{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .humburgur {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+  }
+  #sub-menu {
+    position: inherit;
+  }
+  .show {
+    display: flex;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  main {
+    padding-top: 70px;
+  }
+  main h1 {
     font-size: 2em;
-}
-@media only screen and (max-width:700px) {
-    nav{
-        flex-direction: column;
-    }
-    .logo{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-    }
-    .humburgur{
-        display: block;
-    }
-    .menu{
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        width: 100%;
-        display: none;
-    }
-    #sub-menu{
-        position: inherit;
-    }
-    .show{
-        display: flex;
-    }
-    main{
-        flex-direction: column-reverse;
-    }
-    .info{
-        width: 100%;
-        padding-top: 70px;
-    }
-    .program-Name{
-        width: 100%;
-        padding: 0 20px;
-        justify-content: center ;
-    }
-
+  }
+  .program-Name {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center;
+  }
 }
